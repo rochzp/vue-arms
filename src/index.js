@@ -80,13 +80,13 @@ const generateComponentTrace = vm => {
 }
 
 class VueArams {
-  constructor ({ pipe, ...config }, useArmsEnvs) {
+  constructor ({ pipe, ...config }, useEnvs) {
     this.config = config || {}
     this.pipe = pipe
-    this.useArmsEnvs = useArmsEnvs
+    this.useEnvs = useEnvs
     if (
-      !useArmsEnvs ||
-      (useArmsEnvs && useArmsEnvs.includes(process.env.NODE_ENV))
+      !useEnvs ||
+      (useEnvs && useEnvs.includes(process.env.NODE_ENV))
     ) {
       const copyConfig = Object.assign({}, config)
       try {
@@ -104,10 +104,10 @@ class VueArams {
   }
 
   install (Vue, options = {}) {
-    const { useArmsEnvs = this.useArmsEnvs } = options
+    const { useEnvs = this.useEnvs } = options
     if (
-      !useArmsEnvs ||
-      (useArmsEnvs && useArmsEnvs.includes(process.env.NODE_ENV))
+      !useEnvs ||
+      (useEnvs && useEnvs.includes(process.env.NODE_ENV))
     ) {
       const prevErrorHander = Vue.config.errorHandler
       const errorHandler = (err, vm, info) => {
