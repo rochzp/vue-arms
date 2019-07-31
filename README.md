@@ -43,6 +43,6 @@ Support all configurations in [alife-logger](https://help.aliyun.com/document_de
 
 ### License
 
-[MIT](http://opensource.org/licenses/MIT)
+[ISC](http://opensource.org/licenses/ISC)
 
 Copyright (c) 2019-present Roc

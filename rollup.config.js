@@ -9,7 +9,7 @@ const banner =
 `/*!
   * vue-arms v${version}
   * (c) ${new Date().getFullYear()} Roc
-  * @license MIT
+  * @license ISC
   */`
 
 const resolve = _path => path.resolve(__dirname, './', _path)

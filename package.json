@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ARMS for vue.js 2",
   "author": "Roc",
-  "license": "MIT",
+  "license": "ISC",
   "main": "dist/vue-arms.common.js",
   "module": "dist/vue-arms.esm.js",
   "unpkg": "dist/vue-arms.js",
