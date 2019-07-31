@@ -28,8 +28,18 @@ const logger = new VueArms({
 Vue.use(logger)
 ```
 
+### Configuration
+
+Params | Type | Description | Request | Default
+:- | :- | :- | :- | :-
+config | Object | site configuration, it contains the attribute `pipe`, this property is used to pre-report content, for other properties, see [alife-logger](https://help.aliyun.com/document_detail/66404.html) | yes | - |
+useEnvs | Array| use environment | no | - |
+
+Support all configurations in [alife-logger](https://help.aliyun.com/document_detail/66404.html).
+
 ### Support
 
+- [ARMS](https://help.aliyun.com/document_detail/58652.html)
 
 ### License
 
