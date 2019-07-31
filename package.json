@@ -1,0 +1,53 @@
+{
+  "name": "vue-arms",
+  "version": "1.0.0",
+  "description": "ARMS for vue.js 2",
+  "author": "Roc",
+  "license": "MIT",
+  "main": "dist/vue-arms.common.js",
+  "module": "dist/vue-arms.esm.js",
+  "unpkg": "dist/vue-arms.js",
+  "jsdelivr": "dist/vue-arms.js",
+  "repository": {
+    "type": "git"
+  },
+  "files": [
+    "src/*.js",
+    "dist/*.js"
+  ],
+  "keywords": [
+    "arms",
+    "vue"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "alife-logger": "^1.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "lint-staged": "^9.2.1",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel-minify": "^9.0.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0"
+  }
+}
