@@ -1,6 +1,6 @@
 {
   "name": "vue-arms",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ARMS for vue.js 2",
   "author": "Roc",
   "license": "ISC",
@@ -8,13 +8,15 @@
   "module": "dist/vue-arms.esm.js",
   "unpkg": "dist/vue-arms.js",
   "jsdelivr": "dist/vue-arms.js",
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/rochzp/vue-arms.git"
   },
   "files": [
     "src/*.js",
-    "dist/*.js"
+    "dist/*.js",
+    "types/*.ts"
   ],
   "keywords": [
     "arms",
@@ -34,7 +36,8 @@
     ]
   },
   "dependencies": {
-    "alife-logger": "^1.6.7"
+    "alife-logger": "^1.6.7",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
