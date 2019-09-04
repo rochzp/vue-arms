@@ -36,21 +36,21 @@
     ]
   },
   "dependencies": {
-    "alife-logger": "^1.6.7",
+    "alife-logger": "^1.7.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^6.3.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "lint-staged": "^9.2.1",
-    "rollup": "^1.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "lint-staged": "^9.2.5",
+    "rollup": "^1.20.3",
     "rollup-plugin-babel-minify": "^9.0.0",
     "rollup-plugin-buble": "^0.19.8",
-    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-replace": "^2.2.0"
   },
