@@ -80,14 +80,11 @@ const generateComponentTrace = vm => {
 }
 
 class VueArams {
-  constructor ({ pipe, ...config }, useEnvs) {
+  constructor ({ pipe, ...config }, useEnvs = ['production']) {
     this.config = config || {}
     this.pipe = pipe
     this.useEnvs = useEnvs
-    if (
-      !useEnvs ||
-      (useEnvs && useEnvs.includes(process.env.NODE_ENV))
-    ) {
+    if (Array.isArray(useEnvs) && useEnvs.includes(process.env.NODE_ENV)) {
       const copyConfig = Object.assign({}, config)
       try {
         if (copyConfig.pid) {
