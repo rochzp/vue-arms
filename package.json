@@ -14,7 +14,6 @@
     "url": "https://github.com/rochzp/vue-arms.git"
   },
   "files": [
-    "src/*.js",
     "dist/*.js",
     "types/*.ts"
   ],
