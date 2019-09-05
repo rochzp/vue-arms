@@ -19,7 +19,7 @@ yarn add vue-arms
 ### Usage
 
 ```js
-import VueArms from '@rochzp/vue-arms'
+import VueArms from 'vue-arms'
 
 const logger = new VueArms({
   pid: 'ARMS_PID'
