@@ -33,7 +33,7 @@ Vue.use(logger)
 Params | Type | Description | Request | Default
 :- | :- | :- | :- | :-
 config | Object | site configuration, it contains the attribute `pipe`, this property is used to pre-report content, for other properties, see [alife-logger](https://help.aliyun.com/document_detail/66404.html) | yes | - |
-useEnvs | Array| use environment | no | - |
+useEnvs | Array| use environment | no | ['production'] |
 
 Support all configurations in [alife-logger](https://help.aliyun.com/document_detail/66404.html).
 

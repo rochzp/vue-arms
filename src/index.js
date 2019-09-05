@@ -92,7 +92,7 @@ class VueArams {
           this.logger.install = this.install
           return this.logger
         }
-        throw new Error('cannot find pid')
+        throw new Error('Cannot find arms pid')
       } catch (error) {
         console.error(error)
         throw error
