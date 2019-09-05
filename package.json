@@ -22,7 +22,7 @@
     "vue"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "dist": "rollup -c",
     "lint": "eslint src"
   },
   "gitHooks": {
